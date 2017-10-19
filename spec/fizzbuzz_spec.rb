@@ -15,4 +15,9 @@ describe 'fizzbuzz' do
     expect(fizzbuzz(30)).to eq("fizzbuzz")
     expect(fizzbuzz(45)).to eq("fizzbuzz")
   end
+  it 'returns the given number when passing any other number' do
+    expect(fizzbuzz(1)).to eq(1)
+    expect(fizzbuzz(17)).to eq(17)
+    expect(fizzbuzz(31)).to eq(31)
+  end
 end
